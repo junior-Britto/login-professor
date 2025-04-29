@@ -1,0 +1,254 @@
+:root {
+  --azul-principal: #70b3f7;
+  --azul-claro: #336699;
+  --azul-hover: #005599;
+  --branco: #ffffff;
+  --cinza-claro: #f4f4f4;
+  --cinza-texto: #dddddd;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo com imagem */
+body {
+  background: url(escola.jpeg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--branco);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 10px 70px;
+  flex-wrap: wrap;
+}
+
+.logosinpro img {
+  max-height: 90px;
+  margin-left: 8rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-right: 5rem;
+}
+
+.menu a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+.menu a:hover {
+  background-color: var(--azul-hover);
+}
+
+/* Main */
+main {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: transparent;
+}
+
+/* Esquerda - imagem e texto */
+.imagem {
+  padding: 10rem;
+  max-width: 500px;
+  width: 100%;
+}
+
+.imagem h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--branco);
+  margin-bottom: 15px;
+}
+
+.imagem p {
+  font-size: 1.1rem;
+  color: var(--branco);
+  max-width: 500px;
+}
+
+/* Login */
+.login {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  color: #333;
+  margin: auto;
+}
+
+.login h2 {
+  color: var(--azul-principal);
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 20px;
+  width: 100%;
+  background-color: var(--azul-principal);
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--azul-hover);
+}
+
+.linkesqueceusenha {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: var(--azul-hover);
+  text-decoration: none;
+  text-align: right;
+}
+
+.linkesqueceusenha:hover {
+  color: var(--azul-principal);
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: transparent;
+  padding: 50px 10px;
+  color: var(--branco);
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+footer h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin-bottom: 5px;
+}
+
+/* Responsivo */
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .logosinpro img {
+    margin-left: 0;
+  }
+
+  .menu {
+    justify-content: center;
+    margin-right: 0;
+    gap: 10px;
+  }
+
+  main {
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  .imagem, .login {
+    max-width: 90%;
+  }
+
+  .imagem {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .imagem h2 {
+    font-size: 2rem;
+  }
+
+  .imagem p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu a {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  main {
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .imagem h2 {
+    font-size: 1.8rem;
+  }
+
+  .imagem p {
+    font-size: 0.95rem;
+  }
+
+  .login {
+    padding: 20px;
+  }
+
+  footer {
+    padding: 30px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+  
